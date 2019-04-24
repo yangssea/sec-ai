@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+	<head>
+		<title>合作发展</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 引入 Bootstrap -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/1.js"></script>
+		<script>
+			$(function() {
+				 sipmwidth=document.body.clientWidth;
+				    simw=sipmwidth*0.9;
+				    sbtnwidth=""+simw+"px";
+				    if(sipmwidth<=768){
+				    	$("#sbtn1").css("margin-left","-15px");
+				    	$("#sbtn2").css("margin-left","-15px");
+				    	$("#sbtn3").css("margin-left","-15px");
+				    	$("#sbtn1").css("margin-top","15px");
+				    	$("#sbtn2").css("margin-top","15px");
+				    	$("#sbtn3").css("margin-top","15px");
+				    	$("#sbtn1").css("width",""+sbtnwidth+"");
+				    	$("#sbtn2").css("width",""+sbtnwidth+"");
+				    	$("#sbtn3").css("width",""+sbtnwidth+"");
+				    	$("#btnimg").css("width","100%");
+				    	$("#btnimg").css("height","40%");
+				    	$("#btndiv").css("height","90%");
+				    }
+				$("#sbtn1").click(function() {
+					$("#btnfont1").text("|	合作伙伴计划");
+					$("#btnfont2").append("&nbsp;&nbsp;&nbsp;&nbsp;应对新的网络安全市场变化，梆梆安全建立了创新的商业模式， 希望与有共同认知和市场投入的合作伙伴结盟，并设专业团队—本公司服务事业部统一负责合作伙伴计划的执行。 ");
+					$("#btnimg").src = "img/co01.jpg";
+					$("#btnimg").css("display", "block");
+				});
+				$("#sbtn2").click(function() {
+					$("#btnfont1").text("|	申请合作");
+					$("#btnfont2").text("");
+					$("#btnfont2").append("&nbsp;&nbsp;&nbsp;&nbsp;请点击联系我们并与相关人员联系 ");
+					$("#btnimg").css("display", "none");
+				});
+				$("#sbtn3").click(function() {
+					$("#btnfont1").text("|	认证培训");
+					$("#btnfont2").text("");
+					$("#btnfont2").append("&nbsp;&nbsp;&nbsp;&nbsp;梆梆安全面向渠道合作伙伴，提供常规性业务培训，主要包括新产品、新服务讲解，行业案例的技术实施培训，销售培训等。（每月至少一次，地点、培训时间请随时关注） ");
+					$("#btnimg").css("display", "none");
+				});
+			});
+		</script>
+	</head>
+
+	<body style="height: 100%;">
+		<header>
+			<nav class="navbar navbar-default" style="background-color: white;">
+				<div class="container">
+					<div class="navbar-header">
+						<!--<div class="logo">-->
+						<a href="#" class="navbar-brand"></a>
+						<img src="images/sys/logo9.jpg" style="width: 200px; height:65px; " />
+						<!--</div>-->
+						<!-- 当进入最小设备时，导航条将隐藏，显示“按钮”，点击时可以切面显示导航条隐藏的信息
+                          * data-target ：用于确定需要显示div
+                      -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">按钮</span>
+                        
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					</div>
+					<!-- 导航链接、表单和其他内容切换 -->
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="fuwu.html">服务介绍</a>
+							</li>
+							<li>
+								<a href="product.html">行业方案</a>
+							</li>
+							<li>
+								<a href="cooperation.html">合作发展</a>
+							</li>
+							<li>
+								<a href="relation.html">联系我们</a>
+							</li>
+						</ul>
+						<div class="navbar-right ">
+
+							<div style="margin-top: -24%;"><h3 ><img src="img/1.jpg"  class="hidden-xs" alt=""/></span></h3></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</header>
+		<!--  标题部分    -->
+		<div class="container" ; style="background-image: url(images/sys/3.jpg); background-size: 100% 100%;  width:100%; height: 30%; margin-top: -20px;">
+			<div style="width: 100%; height:100%;">
+				<div style="text-align: center; margin-top: 4%;">
+					<font style="font-size:30px ; color: honeydew ; ">
+						合作发展介绍
+					</font><br />
+					<font style="font-size:25px ; color: honeydew;">Introduction to cooperative development</font>
+				</div>
+			</div>
+		</div>
+		<!--  小标题部分    -->
+		<div class="container">
+			<div style="width: 100%; height:100%;">
+				<div style="text-align: center; margin-top:7%;">
+					<font style="font-size:20px ">体系分布</font><br />
+					<font style="font-size:15px ; color: gray;">Distribution system</font>
+				</div>
+			</div>
+			<div class="container " style="margin-top: 6%; ">
+				<button type="button" id="sbtn1" class="btn btn-primary " style="height:80px ; width:380px ;margin-left: -72px; "><font style="color: white; font-size:25px ; ">合作伙伴计划</font></button>
+				<button type="button" id="sbtn2" class="btn btn-primary " style="height:80px ; width:380px ;margin-left:30px; "><font style="color: white; font-size:25px ; ">申请合作</font></button>
+				<button type="button" id="sbtn3" class="btn btn-primary " style="height:80px ; width:380px ;margin-left: 30px; "><font style="color: white; font-size:25px ; ">认证培训</font></button>
+			</div>
+		</div>
+		<!--体系分栏-->
+		<!--div1-->
+		<div id="btndiv" style="width: 80%; height: 85%; border:1px solid black; margin-left: auto; margin-right: auto; margin-top: 5%; ">
+			<font id="btnfont1" style="font-size: 20px; ">|&nbsp;合作伙伴计划</font>
+			<hr /><br />
+			<font id="btnfont2">&nbsp;&nbsp;&nbsp;&nbsp;应对新的网络安全市场变化，梆梆安全建立了创新的商业模式， 希望与有共同认知和市场投入的合作伙伴结盟，并设专业团队—本公司服务事业部统一负责合作伙伴计划的执行。
+			</font>
+			<img id="btnimg" src="img/co01.jpg " />
+		</div>
+		<div class="container-fluid " style="background: rgb(231,97,93); padding: 20px 10px; margin-top: 100px; ">
+			<div class="col-md-2 "></div>
+			<div class="col-md-3 ">
+				<font>cslgit©2016 Bootstrap 响应式网络安全服务&nbsp;|&nbsp;版权所有️</font>
+			</div>
+			<div class="col-md-2 "></div>
+			<div class="col-md-3 ">
+				<span class="glyphicon glyphicon-phone-alt "></span>
+				<font>联系我们</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-map-marker "></span>
+				<font>公司地址</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-question-sign "></span>
+				<font>服务声明</font>
+			</div>
+			<div class="col-md-2 "></div>
+		</div>
+	</body>
+
+</html>

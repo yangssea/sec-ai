@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<title>服务介绍</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 引入 Bootstrap -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/1.js"></script>
+		<script>
+			$(function(){
+				    ipmwidth=window.innerWidth;
+				    imw=ipmwidth*0.6;
+				    btnwidth=""+imw+"px";
+				    if(ipmwidth<=768){
+				    	$("#btn1").css("margin-left","-15px");
+				    	$("#btn2").css("margin-left","-15px");
+				    	$("#btn3").css("margin-left","-15px");
+				    	$("#btn1").css("margin-top","15px");
+				    	$("#btn2").css("margin-top","15px");
+				    	$("#btn3").css("margin-top","15px");
+				    	$("#btn1").css("width",""+btnwidth+"");
+				    	$("#btn2").css("width",""+btnwidth+"");
+				    	$("#btn3").css("width",""+btnwidth+"");
+				    	$(".listservers").css("width",""+btnwidth+"");
+				    	$(".listservers").css("height","450px");
+				    	$("#listfuwu").css("margin-left","10px");
+				    	$("#listfuwu1").css("margin-left","10px");
+				    	$("#listfuwu2").css("margin-left","10px");
+				    }
+					$("#btn1").click(function(){
+						var scroll_offset = $("#block1").offset(); //得到pos这个div层的offset，包含两个值，top和left
+						$("body,html").animate({
+							scrollTop: scroll_offset.top //让body的scrollTop等于pos的top，就实现了滚动
+						}, 0);
+					});
+					$("#btn2").click(function(){
+						var scroll_offset = $("#block2").offset(); //得到pos这个div层的offset，包含两个值，top和left
+						$("body,html").animate({
+							scrollTop: scroll_offset.top //让body的scrollTop等于pos的top，就实现了滚动
+						}, 0);
+					});
+					$("#btn3").click(function(){
+						var scroll_offset = $("#block3").offset(); //得到pos这个div层的offset，包含两个值，top和left
+						$("body,html").animate({
+							scrollTop: scroll_offset.top //让body的scrollTop等于pos的top，就实现了滚动
+						}, 0);
+					});
+			});
+		</script>
+	</head>
+
+	<body style="height: 100%;">
+		<header>
+			<nav class="navbar navbar-default" style="background-color: white;">
+				<div class="container">
+					<div class="navbar-header">
+						<!--<div class="logo">-->
+						<a href="#" class="navbar-brand"></a>
+						<img src="images/sys/logo9.jpg" style="width: 200px; height:65px; " />
+						<!--</div>-->
+						<!-- 当进入最小设备时，导航条将隐藏，显示“”，点击时可以切面显示导航条隐藏的信息
+                          * data-target ：用于确定需要显示div
+                      -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">按钮</span>
+                        
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					</div>
+					<!-- 导航链接、表单和其他内容切换 -->
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="fuwu.html">服务介绍</a>
+							</li>
+							<li>
+								<a href="product.html">行业方案</a>
+							</li>
+							<li>
+								<a href="cooperation.html">合作发展</a>
+							</li>
+							<li>
+								<a href="relation.html">联系我们</a>
+							</li>
+						</ul>
+						<div class="navbar-right ">
+
+							<div style="margin-top: -24%;"><h3 ><img src="img/1.jpg" class="hidden-xs" alt=""/></span></h3></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</header>
+		<!--  标题部分    -->
+		<div class="container" ; style="background-image: url(images/sys/fwbanner.jpg); background-size: 100% 100%;  width:100%; height: 30%; margin-top: -20px;">
+			<div style="width: 100%; height:100%;">
+				<div style="text-align: center; margin-top: 4%;">
+					<font style="font-size:30px ; color: black ; opacity:; ">
+						服务体系介绍
+					</font><br />
+					<font style="font-size:25px ; color: honeydew;">Service system introduction</font>
+				</div>
+			</div>
+		</div>
+		<!--  小标题部分    -->
+		<div class="container">
+			<div style="width: 100%; height:100%;">
+				<div style="text-align: center; margin-top:7%;">
+					<font style="font-size:20px ">体系分布</font><br />
+					<font style="font-size:15px ; color: gray;">Distribution system</font>
+				</div>
+			</div>
+			<div class="container" style="margin-top: 6%;">
+				<button type="button" id="btn1" class="btn btn-primary" style="height:80px ; width:380px ;margin-left: -72px; "><font style="color: white; font-size:20px ;">安全加固及数据加密</font></button>
+				<button type="button" id="btn2" class="btn btn-primary" style="height:80px ; width:380px ;margin-left:30px; "><font style="color: white; font-size:20px ;">安全感知产品与服务</font></button>
+				<button type="button" id="btn3" class="btn btn-primary" style="height:80px ; width:380px ;margin-left: 30px; "><font style="color: white; font-size:20px ;">安全检测产品与服务</font></button>
+			</div>
+		</div>
+		<!--体系分栏-->
+		<div class="container" id="block1" style="width: 100%; height: 60%; margin-top: 6%;">
+			<font style="font-size:25px ; margin-left:40px; float: left;">安全加固及数据加密</font>
+			 <div id="listfuwu1" class="listservers col-xs-10" style="margin-left: -10%; text-align: center;">
+				<a  href="fwtian1.html"><img src="img/fwtian11.png" style="width:30% ;height:25%; margin-top:21% ; border-radius: 50%;" id="fuwulist1" /></a><br />
+				<font style="font-size:20px ;"><br/>移动应用安全加固<br/></font>
+				<font>
+					针对目前移动应用普遍存在的破解、篡改、盗版、钓鱼欺诈、内存调试、数据窃取等各类安全风险，
+					公司为开发者提供全面的移动应用加固加密技术和攻击防范服务<br/>
+					<br />
+					<hr color="blue" size="2" />
+				</font>
+			</div>
+			<div class="listservers" style="text-align: center;">
+				<a href="fwtian12.html"><img src="img/futian21.png" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist2" /></a><br />
+				<font style="font-size:20px ; "><br/>移动应用源代码加固<br/></font>
+				<font>
+					未经混淆的源代码受到攻击后，易暴露程序中关键算法、核心业务逻辑、数据结构和模块的控制流布局等敏感内容.<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+			<div class="listservers " style="text-align: center; ">
+				<a href="fwtian13.html"><img src="img/fwtian31.png" style="width:30% ;height:25%; margin-top:21% ; border-radius: 50%; "  id="fuwulist3" /></a><br />
+				<font style="font-size:20px ;"><br/>安全密钥白盒<br/></font>
+				<font>
+					未目前使用的基于Key的AES、DES、SM4等传统加密算法已不再安全，攻击者通过控制软件的运行环境（如CPU、内存、寄存器等）实现对密钥的白盒攻击、破解<br/>
+					<br />
+					<hr color="blue" size="2" />
+				</font>
+			</div>
+		</div>
+		<div class="container" style="width: 100%; height: 60%; margin-top: 7%;">
+			<div  class="listservers" style="margin-left: 12%; text-align: center;">
+				<a href="fwtian14.html"><img src="img/fwtian41.jpg" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist4" /></a><br />
+				<font style="font-size:20px ; "><br/>安全软键盘SDK<br/></font>
+				<font>
+					全流程、多层次、立体化保护信息数据输入安全.<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+			<div class="listservers " style="text-align: center; ">
+				<a href="fwtian15.html"><img src="img/fwtian51.png" style="width:30% ;height:25%; margin-top:21% ; border-radius: 50%; "  id="fuwulist5" /></a><br />
+				<font style="font-size:20px ;"><br/>防界面劫持SDK<br/></font>
+				<font>
+					利用仿冒的界面覆盖、替换App原界面来进行钓鱼欺诈，正在成为一种流行的App恶意攻击方式，即界面劫持攻击.<br/>
+					<br />
+					<hr color="blue" size="2" />
+				</font>
+			</div>
+		</div>
+		<!--体系分栏1-->
+		<div class="container" id="block2" style="width: 100%;  margin-top: 12%;">
+			<font style="font-size:25px ; margin-left:40px; float: left;">安全感知产品与服务</font>
+			<div id="listfuwu" class="listservers" style="margin-left: -10%; text-align: center;">
+				<a href="fwbd1.html"><img src="img/rgzn.jpg" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist6" /></a><br />
+				<font style="font-size:20px ; "><br/>渠道监测及响应<br/></font>
+				<font>
+					全网渠道覆盖，智能化数据监测与分析，帮助企业及时了解各类新增盗版应用情况.<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+			<div class="listservers " style="text-align: center; ">
+				<a href="fwbd2.html"><img src="img/bd2.png" style="width:30% ;height:25%; margin-top:21% ; border-radius: 50%; "  id="fuwulist7" /></a><br />
+				<font style="font-size:20px ;"><br/>移动威胁感知服务<br/></font>
+				<font>
+					构建企业移动威胁感知体系，防刷单、抢单、刷积分、欺诈校验等黑产风险.<br/>
+					<br />
+					<hr color="blue" size="2" />
+				</font>
+			</div>
+			<div class="listservers" style="text-align: center;">
+				<a href="fwbd3.html"><img src="img/bd3.png" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist8" /></a><br />
+				<font style="font-size:20px ; "><br/>漏洞监测及响应<br/></font>
+				<font>
+					为企业提供安全漏洞监测服务，建立漏洞风险快速响应机制.<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+		</div>
+		<div class="container" id="block2" style="width: 100%;  margin-top: 8%;">
+			<div class="listservers" style="margin-left: 8%; text-align: center;">
+				<a href="fwbd4.html"><img src="img/bd4.png" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist9" /></a><br />
+				<font style="font-size:20px ; "><br/>业务流审计系统<br/></font>
+				<font>
+					捕获伪装成正常流量的各种隐藏性攻击，保护金融、电商、政府、物联网等行业业务系统安全<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+		</div>
+		<!--体系分栏2-->
+		<div class="container " id="block3" style="width: 100%;  margin-top: 12%; ">
+			<font style="font-size:25px ; margin-left:40px; float: left; ">安全检测产品与服务</font>
+			<div id="listfuwu2"  class="listservers " style="margin-left: -10%; text-align: center; ">
+				<a href="fwbs1.html"><img src="img/styleandmand.jpg" style="width:30% ;height:25%; margin-top:21% ; border-radius: 50%;  " id="fuwulist10" /></a><br />
+				<font style="font-size:20px ;"><br/>移动应用渗透性测试<br/></font>
+				<font>
+					检验移动应用系统和业务逻辑的脆弱性和有效性.<br/>
+					<br />
+					<hr color="blue" size="2" />
+				</font>
+			</div>
+			<div class="listservers" style="text-align: center;">
+				<a href="fwbs2.html"><img src="img/wlxxsjjs.jpg" style="width:30% ;height:25%; margin-top:21% ;  border-radius: 50%;"  id="fuwulist11" /></a><br />
+				<font style="font-size:20px ; "><br/>移动应用测评云平台<br/></font>
+				<font>
+					检测App内部存在的安全风险、漏洞，对发现的安全问题给出解决建议，帮助开发者了解并提高其开发程序的安全性。<br/>
+					<br />
+					<hr color="blue " size="2 " />
+				</font>
+			</div>
+		</div>
+		<div class="container-fluid " style="background: rgb(231,97,93); padding: 20px 10px; margin-top: 100px; ">
+			<div class="col-md-2 "></div>
+			<div class="col-md-3 ">
+				<font>cslgit©2016 Bootstrap 响应式网络安全服务&nbsp;|&nbsp;版权所有️</font>
+			</div>
+			<div class="col-md-2 "></div>
+			<div class="col-md-3 ">
+				<span class="glyphicon glyphicon-phone-alt "></span>
+				<font>联系我们</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-map-marker "></span>
+				<font>公司地址</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-question-sign "></span>
+				<font>服务声明</font>
+			</div>
+			<div class="col-md-2 "></div>
+		</div>
+	</body>
+
+</html>

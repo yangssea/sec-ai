@@ -1,0 +1,199 @@
+body {
+	font-family: Microsoft YaHei
+}
+
+.head-top {
+	background: #5fa022;
+	padding: 0.8em 0;
+}
+.navbar-brand {
+	padding: 0 0;
+}
+/*设置图片logo的大小和位置*/
+
+.navbar-brand>img {
+	height: auto;
+	margin-right: 5px;
+	margin-top: 5px;
+	width: 250px;
+}
+
+.zixunkuang{
+	font-size:25px; 
+	color: white; 
+	margin-left: 100px; 
+	float: left; 
+	margin-top: 10px;
+	font-family: 'microsoft sans serif';"
+}
+.zixunkuang2{
+	font-size:20px; 
+	color: #8E908D;  
+	margin-left:30px;  
+	float: left; 
+	margin-top: 15px; 
+	font-family: 'microsoft sans serif';
+}
+
+.tab-content img{
+	border-radius: 50%;
+}
+/*设置整个导航菜单的内边距、背景色和阴影*/
+
+.navbar-default {
+	padding: 1.5em 0;
+	background-color: #f2f0f1;
+	box-shadow: 12px -5px 39px -12px;
+}
+/*设置导航栏中菜单a链接的样式*/
+
+.navbar-default .navbar-nav>li a {
+	top: 10px;
+	padding: 0.5em 3em;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #919191;
+}
+/*设置导航栏菜单的鼠标悬停和获取焦点时的状态*/
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	background: #D96B66;
+	color: white;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+/*设置导航栏右侧a链接（0.00）的颜色*/
+
+.navbar-right>a {
+	color: #D96B66;
+}
+/*媒体查询：当视口小于970px时，导航菜单字体变小，避免了换行的问题*/
+
+@media (max-width: 970px) {
+	.navbar-default .navbar-nav>li a {
+		font-size: 1.1em;
+	}
+}
+body,h3,h6 { font-family: Microsoft YaHei}
+        /*热卖商品*/
+.hot h3 {
+    margin-top: -20px;
+    color: #1A1A1A;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 1em;
+    padding: 0 0 0.5em;
+    border-bottom: 2px solid #eee;
+}
+.hot p {
+    color: #5fa022;;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.hot {
+    padding: 3em 0;
+    border: 1px solid #eee;
+    margin: 0 0;
+}
+.hot h6 {
+    color: #C15162;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0.3em 0;
+}
+a.morebtn {
+    display: block;
+    font-size: 1em;
+    color: #FFF;
+    text-decoration: none;/*去掉a链接下划线*/
+    font-weight: 400;
+    background: #D96B66;
+    padding: 10px 18px;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+a.morebtn:hover{
+    background:  #5fa022;
+}
+.tab-content img{
+	width: 136px;
+	height: 136px;
+}
+							
+@media (max-width: 1024px) {
+    a.morebtn{
+        max-width:410px;/*当视口小于1024px时按钮的最大宽度*/
+    }
+}
+body { font-family: Microsoft YaHei}/*设置body元素字体为Microsoft YaHei*/
+        /*特色推荐*/
+        /*设置左上角图片的位置和宽高*/
+.navbar-brand>img{
+    height: auto;
+    width:250px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/*设置选项卡菜单的字体颜色*/
+.nav-pills>li>a{
+    color:#8e908d ;
+}
+/*设置选项卡菜单鼠标悬停和获取焦点时背景色和字体颜色*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #5A9522;
+}
+.choose{
+    border: 1px solid silver;
+}
+/*设置选项卡内容的位置*/
+.tab-content{
+    margin: 5px;
+    text-align: center;/*居中显示*/
+}
+.pic{
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
+}
+.carousel {
+    background: white;
+}
+/*媒体查询：当视口小于992px时缩小了轮播div的宽度，图片换行*/
+@media (max-width:992px) {
+    .pic{
+        width: 415px;
+    }
+}
+
+/*产品与服务*/
+.listservers{
+	width:23% ; 
+	height: 100%; 
+	background-color:#DCDCDC;
+	border-radius: 5%; 
+	margin-top:5%; 
+	margin-left: 4.5%;
+	float: left;
+	
+}
+/*行业方案*/
+.listdiv{
+	width: 22%;
+	height: 100%;
+	float: left;
+	border-bottom: 3px solid lightsteelblue; 
+}
+.listdiv:hover{
+	width: 22%;
+	height: 100%;
+	float: left;
+	border-bottom: 3px solid blue; 
+	color: white;
+}

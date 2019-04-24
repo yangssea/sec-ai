@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>移动威胁感知服务</title>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<style>
+		td {
+			border: 1px solid black;
+			width: 50px;
+			height: 30px;
+		}
+		th {
+			border: 1px solid black;
+			width: 150px;
+			height: 35px;
+			background-color: darkslategray;
+			border-bottom: 5px solid   chocolate;
+			opacity: 0.8;
+			color: white;
+		}
+		table {
+			align-content: center;
+			margin: auto;
+			border-collapse: collapse;
+			text-align: center;
+			font-size: 13px;
+			color: gray;
+		}
+	</style>
+	
+	<script>
+	 $(function(){
+    	$("tbody tr:odd").css("background-color","lightgray");
+    });
+	</script>
+	</head>
+	<body style="width: 100%; height: 100%;">
+		 
+		<div  style="width:70%; margin-left: auto; margin-right: auto;">
+			<div>
+		<img src="images/sys/logo9.jpg"  width="200px" height="60px" "/>
+	    <div style="background-color: darkblue; width: 200px; height: 50px; float: right; border-radius:5% ; margin-top: 10px; text-align: center;"><div style="height: 15px;"></div><font style="font-size:20px ; color: azure; ">CSLG IT laboratory</font></div>
+		</div>
+			<div style="width 100%; height:25px; color: white; font-size: 12px; text-align: center; ">
+				<a href="index.html"><div style="width: 20%; height:100% ; float: left; background-color: yellowgreen;"><font style="line-height: 25px;">首页</font></div></a>
+				<a href="fuwu.html"><div style="width: 20%; height:100% ;  float: left; background-color: darkseagreen ;"><font style="line-height: 25px;">服务介绍</font></div></a>
+				<a href="product.html"><div style="width: 20%; height:100% ; float: left;  background-color:darkseagreen ;"><font style="line-height: 25px;">行业方案</font></div></a>
+				<a href="cooperation.html"><div style="width: 20%; height:100% ;  float: left; background-color:darkseagreen ;"><font style="line-height: 25px;">合作发展</font></div></a>
+				<a href="relation.html"><div style="width: 20%; height:100% ;  float: left; background-color:darkseagreen ;"><font style="line-height: 25px;">联系我们</font></div></a>
+		</div>
+		<h2 align="center">移动威胁感知服务</h2>
+		<p >&nbsp;&nbsp;&nbsp;&nbsp;构建企业移动威胁感知体系，防刷单、抢单、刷积分、欺诈校验等黑产风险</p>
+		<h3><font color=lightskyblue>| &nbsp; 主要功能:</font></h3>
+			<strong>反刷票刷单 </strong>&nbsp;解决针对移动系统的刷单、刷票、羊毛党等非正常业务行为，保护用户营销体系及业务体系的健康。<br>
+			<strong>反虚假营销 </strong>&nbsp;解决移动应用推广及激活过程中的虚假营销风险，帮助客户提升推广效果，节约推广成本。<br>
+			<strong>反盗号盗刷 </strong>&nbsp;解决移动应用账号丢失、木马病毒及黑产导致的威胁，保护用户资金账号安全。<br>
+		    <strong>定制化威胁模型  </strong>&nbsp;基于行为数据和关联分析建立的定制化威胁检测模型，针对特定客户的特定威胁做检测，统一整合到威胁感知平台。
+		<h3><font color=lightskyblue>| &nbsp;移动威胁指数模型（部分）:</font></h3>
+		梆梆安全业界首创移动威胁风险指数模型，针对不同业务不同风险阶段定义相应的指数识别标准。
+		<table id="tha">
+			<thead>
+				<tr>
+					<th>指数类型</th>
+					<th>指数等级</th>
+					<th>指数描述</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="width:150px">应用安全指数</td>
+					<td style="width:300px" >P0 - P4</td>
+					<td style="width:300px">应用可能被控制、劫持或篡改，导致安全控制失败的风险级别</td>	
+				</tr>
+				<tr>					
+					<td>设备安全指数</td>
+					<td>P0 - P5</td>
+					<td>设备保证应用执行的环境安全的风险级别</td>
+				</tr>
+				<tr>				
+					<td>行为安全指数</td>
+					<td>S0 - S9</td>
+					<td>当前应用对服务器发起的行为是否满足基本时序、统计等常识性规则</td>
+				</tr>
+				<tr>					
+					<td>刷票指数</td>
+					<td>S0 - S3</td>
+					<td>查询、锁定、购买等行为来自于非法用户的风险级别</td>
+				</tr>
+				<tr>		
+					<td>虚假推广指数</td>
+					<td>S0 - S3</td>
+					<td>非正常的点击、安装、下载、激活等推广行为的可疑指数</td>
+				</tr>
+				<tr>
+					
+					<td>可疑交易指数</td>
+					<td>S0 - S5</td>
+					<td>当前应用发起的登录、交易、修改资料等行为的可疑度指数</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3><font color=lightskyblue>| &nbsp; 产品优势和价值:</font></h3>	
+		梆梆安全威胁感知系统，为企业提供了更好的移动业务安全监测、管控功能，有效规避刷单、刷量、刷积分、刷代金券、刷票、欺诈交易、盗用泄露的用户数据等风险行为，已经成功在银行、基金、政府、运营商、互联网企业等多方领域部署使用，效果显著。<br>
+		<strong>主要优势和价值：</strong><br>
+			<div>
+		<font style="float: left;"><br />
+		■ 移动威胁数据采集、挖掘、可视化展示、风险管理一体化服务<br /><br />
+		■ 标准威胁模型 + 可定制化安全模型<br /><br />
+		■ 私有云 + 公有云协同部署 <br /><br />
+		■ 面向全业务的泛安全保障<br /><br />
+		■ 多地联动，数据共享<br /><br />
+		</font>
+		<img src="img/bd2.png" style="float: left; margin-left: 50px;">
+			</div>
+			<div style="margin-top:280px;">
+		<h3><font color=lightskyblue >| &nbsp; 安全的技术实力和成就 :</font></h3>
+		• 加固技术演进之路<br>
+		• 产品研发之路<br>
+		• 所取得的资质<br>
+		• 所取得的荣誉成就<br>
+			<div style="width: 100%; height: 80px; background:darkgray; margin-top: 50px;">
+				<div style="height: 25px;"></div>
+				<font style="color: white; font-size:15px ; ">cslgit©2016 Bootstrap 响应式网络安全服务 | 版权所有️</font>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

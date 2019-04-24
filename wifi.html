@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>无线安全</title>
+		<link rel="stylesheet" href="css/sys.css" />
+	</head>
+	<font size="2" ></font><br>
+	<font size="3" color=lightskyblue><br></font>
+	<body style="width: 100%;height: 100%;">
+		<div style="margin-left: auto;margin-right: auto; width: 70%;">
+			<div>
+		<img src="images/sys/logo9.jpg"  width="200px" height="60px" "/>
+	    <div style="background-color: darkblue; width: 200px; height: 50px; float: right; border-radius:5% ; margin-top: 10px; text-align: center;"><div style="height: 15px;"></div><font style="font-size:20px ; color: azure; ">CSLG IT laboratory</font></div>
+		</div>
+			<div style="width 100%; height:25px; color: white; font-size: 12px; text-align: center; ">
+				<a href="index.html"><div style="width: 20%; height:100% ; float: left; background-color: yellowgreen;"><font style="line-height: 25px;">首页</font></div></a>
+				<a href="fuwu.html"><div style="width: 20%; height:100% ;  float: left; background-color: darkseagreen ;"><font style="line-height: 25px;">服务介绍</font></div></a>
+				<a href="product.html"><div style="width: 20%; height:100% ; float: left;  background-color:darkseagreen ;"><font style="line-height: 25px;">行业方案</font></div></a>
+				<a href="cooperation.html"><div style="width: 20%; height:100% ;  float: left; background-color:darkseagreen ;"><font style="line-height: 25px;">合作发展</font></div></a>
+				<a href="relation.html"><div style="width: 20%; height:100% ;  float: left; background-color:darkseagreen ;"><font style="line-height: 25px;">联系我们</font></div></a>
+		</div>
+		<h1 align="center">无线安全</h1>
+		<p>
+		<h3><font color=black>网络扫描</font></h3>
+		网络扫描算是情报搜集的阶段之一<br>
+		<font size="2" >像nmap等工具，是可以轻易的获取到局域网中用户的基本信息 ，可以为后续的进一步动作做准备</font><br><br>
+		不仅仅是对其他人的情报搜集<br>
+		<font size="2" >像Wireshark等抓包工具，其实可以反过来观察自己本机的流量<br>比如像ARP欺骗等攻击，会在网络中大量发送ARP请求等<br>
+		Wireshark有助于你针对其进行了解、或更进一步的动作等</font><br>
+		<h3><font color=black>破解wifi密码</font></h3>
+		由于wifi现如今的应用非常广泛，所以破解手段有层出不穷<br>
+		<font size="3" color=lightskyblue>1.暴力破解<br></font>
+		<font size="2" >
+		所谓暴力破解，就是CPU结合字典的战斗，穷举<br>
+		Aircrack-ng算是wifi破解中常出现的工具之一 <br>
+		无论是后面的PIN码破解还是社工破解，都是需要Aircrack-ng的帮助的 <br>
+		其本身也具备破解wifi的本领</font><br>
+		<font size="3" color=lightskyblue>2.PIN码破解<br></font>
+		<font size="2" >PIN码其实就是可以快速连接上wifi的识别码(PIN码可以更改)<br> 
+		reaver就是一款针对PIN码的破解工具，不过也是需要穷举的 <br>
+		这种方法我不常用，所以了解的比较少</font><br>
+		<font size="3" color=lightskyblue>3.社工破解<br></font>
+		<font size="2" >社工就是社会工程学，这种方法与穷举法思路不同，是针对’人’来进行的破解攻击<br>
+		Fluxion是一个很不错的破解工具，Fluxion的运行需要许多其他工具的帮助 <br>
+		好处就是，不需要消耗过多的资源，只需要等待目标wifi使用者自行输入密码即可 <br>
+		不过若是目标wifi主人几个月不回家，那就没办法了，哈哈</font><br>
+		<h3><font color=black>针对漏洞的攻击手段</font></h3>
+		<font size="2" >是可以利用漏洞，对目标主机进行一系列动作的攻击手段<br> 
+		此攻击手段对比其他攻击来说，它是需要PC端或者移动端的漏洞<br>
+		当然，它的攻击结果也是非常理想的<br>
+		Metasploit就是一个漏洞框架.<br> 
+		全称叫做The Metasploit Framework，简称叫做MSF. <br>
+		Metasploit不仅仅是拥有方便性和强大性，更重要的是它的框架. <br>
+		它允许使用者开发自己的漏洞脚本，从而进行测试.<br>
+		常用Modules如Exploits(漏洞利用)、Payloads(漏洞利用后的操作)等 <br>
+		进入目标主机之后，可以进行： <br>
+		‘桌面截图’、’网络操作’、’进程操作’、’文件管理’、’键鼠记录’、’音频记录’、’摄像头获取’等操作<br></font>
+		<h3><font color=black>泛洪攻击</font></h3>
+		<font size="2" >
+		其实’泛洪’攻击有多种分类，基本都是致使目标机器资源消耗巨大，或影响正常功能执行.<br>
+		常用的就是MDK3工具了 <br>
+		这种攻击优势就在于，它不需要破解wifi密码，就可以影响其正常工作 <br>
+		先使用Aircrack-ng工具找到目标主机，并观察其信息 <br>
+		MDK3的使用方法很简单，就可以轻松攻击目标wifi了 <br>
+		不过!注意!，这种方法可能会对周围其它无关的wifi信号造成干扰<br></font>
+		<h3><font color=black>DoS攻击</font></h3>
+		近几年的DDoS攻击新闻，大家应该早就耳熟能详了吧 <br>
+		DoS攻击就是拒绝服务攻击，其攻击目的简单明了，就是使得目标网络无法提供正常的服务或资源访问<br>
+		<font size="2" >常用的工具有Hping3 </font><br>
+		<h3><font color=black>Cookie窃取</font></h3>
+		Cookie是网站为了辨别用户身份，进行Session跟踪而储存在用户本地终端上的数据(通常经过加密) <br>
+		也正是利用了这点，使得可以窃取用户端Cookie来进行操作<br>
+		<font size="2" >对于Cookie的窃取来说，我觉得经验比方法重要<br>
+		先使用Ettercap等工具进行ARP欺骗，进而使用Sniff等工具嗅探抓包 <br>
+		使用Wireshark分析包(先过滤所抓的包，因为只查看cookie的包就行了)<br>
+		从包中找到记录Cookie的包并且复制bytes(去看看网上大神的经验吧)<br>
+		使用Cookie管家等浏览器插件，即可登录目标的网站用户<br></font>
+		<h3><font color=black>Session劫持</font></h3>
+		关于Session与Cookie的概念区别<br>
+		<font size="2" >Session劫持，包括ARP欺骗、重放流量等操作<br>
+		需要设置浏览器代理，或者不使用代理使用CookieCadger.jar(需要配置java运行环境)<br>
+		方法也是先使用Ettercap等工具进行ARP欺骗 <br>
+		配合ferret和hamster工具的使用，就可以取代会话了<br></font>
+		</p>
+		<div style="width: 100%; height: 80px; background:darkgray; margin-top: 50px;">
+				<div style="height: 25px;"></div>
+				<font style="color: white; font-size:15px ; ">cslgit©2016 Bootstrap 响应式网络安全服务 | 版权所有️</font>
+			</div>
+		</div>
+	</body>
+</html>
